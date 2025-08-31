@@ -9,6 +9,11 @@
   "routes": [
     { "src": "/api/keepalive(?:/.*)?", "dest": "api/keepalive.py" }
   ],
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 60
+    }
+  },
   "crons": [
     {
       "path": "/api/keepalive",
